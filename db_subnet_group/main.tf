@@ -8,8 +8,8 @@ module "env-product" {
 
 resource "aws_db_subnet_group" "db_subnet_group" {
   subnet_ids = [
-    var.public_restricted_subnet_a,
-    var.public_restricted_subnet_b
+    var.rds_private_subnet_a,
+    var.rds_private_subnet_b
   ]
 
   name       = lower(module.env-product.id)

@@ -17,12 +17,12 @@ variable "tags" {
   type        = map(string)
 }
 
-variable "public_restricted_subnet_a" {
+variable "rds_private_subnet_a" {
   type = string
   description = "Publicly restricted subnet id"
 }
 
-variable "public_restricted_subnet_b" {
+variable "rds_private_subnet_b" {
   type = string
   description = "Publicly restricted subnet id"
 }
