@@ -1,5 +1,5 @@
-module "blue-green" {
-  source    = "../blue_green"
+module "env-product" {
+  source    = "../env_product_mapping"
   product_name = var.product_name
   env     = var.env
   name      = var.name
@@ -8,7 +8,7 @@ module "blue-green" {
 
 locals {
   commonTags = {
-    Name = module.blue-green.id
+    Name = module.env-product.id
   }
 }
 
