@@ -25,14 +25,6 @@ resource "aws_ecs_task_definition" "aws-ecs-task" {
       "image": "${var.image}",
       "entryPoint": [],
       "essential": true,
-      "logConfiguration": {
-        "logDriver": "awslogs",
-        "options": {
-          "awslogs-group": "${var.log_group}",
-          "awslogs-region": "${var.region}",
-          "awslogs-stream-prefix": "${var.name}-${var.env}"
-        }
-      },
       "portMappings": [
         {  
           "containerPort": ${var.port},

@@ -1,6 +1,6 @@
 variable "product_name" {
   type        = string
-  description = "Namespace (e.g. `Falcon` or `Magicleap`)"
+  description = "Namespace (e.g. `Fastag` or `Customer product`)"
 }
 
 variable "env" {

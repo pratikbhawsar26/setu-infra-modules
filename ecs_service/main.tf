@@ -6,7 +6,7 @@ module "env-product" {
   tags          = var.tags
 }
 
-resource "aws_ecs_service" "raven" {
+resource "aws_ecs_service" "setu" {
   name                                  = var.name
   cluster                               = var.cluster
   task_definition                       = var.task_definition
