@@ -59,9 +59,9 @@ variable "force_new_deployment" {
   
 }
 
-variable "private_subnet" {
-  description = "Private subnet for ECS Service"
-  type = string
+variable "private_subnets" {
+  description = "Private subnets for ECS Service"
+  type = list(string)
   
 }
 

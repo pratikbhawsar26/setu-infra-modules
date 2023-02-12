@@ -15,7 +15,7 @@ resource "aws_ecs_service" "setu" {
   desired_count                         = var.desired_count
   force_new_deployment                  = var.force_new_deployment
   network_configuration {
-    subnets           = [var.private_subnet]
+    subnets           = [var.private_subnets]
     assign_public_ip  = false
     security_groups   = [
       var.service_security_group,
