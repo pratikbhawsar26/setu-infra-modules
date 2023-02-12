@@ -83,15 +83,3 @@ variable "encrypted" {
   description = "Set EBS encryption true of false. Default is true"
   default     = true
 }
-
-variable "user_data_path" {
-  type        = string
-  description = "User data to provide when launching the instance."
-}
-
-variable "variable_data" {
-  type        = map(string)
-  description = "User data variable to be passed to user data template file"	
-  default     = {}
-}
- 
