@@ -1,5 +1,5 @@
 output "name" {
-    value = aws_ecs_service.raven.name
+    value = aws_ecs_service.setu.name
   
 }
 
