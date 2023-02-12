@@ -89,12 +89,6 @@ variable "port" {
   
 }
 
-variable "log_group" {
-  description = "Log Group name"
-  type = string
-  
-}
-
 variable "region" {
   description = "Region of Log Group"
   type = string
